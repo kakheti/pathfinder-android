@@ -5,6 +5,9 @@
     "browserify": "^10.2.4",
     "gulp": "^3.9.0",
     "gulp-browserify": "^0.5.1",
-    "gulp-sass": "^2.0.3"
+    "gulp-sass": "^2.0.3",
+    "jquery": "^2.1.4",
+    "lodash": "^3.10.0",
+    "materialize-css": "^0.96.1"
   }
 }
