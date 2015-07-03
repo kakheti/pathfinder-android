@@ -3,6 +3,7 @@ var api = require('./api');
 var search = require('./search');
 var _ = require('lodash');
 var objectTypes = require('./object-types');
+var config = require('./config');
 
 var logger = function(message, duration) {
   if(!message) return;

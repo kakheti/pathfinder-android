@@ -3,6 +3,7 @@ var _ = require('lodash');
 var clusterer = require('./lib/markerclusterer');
 var api = require('./api');
 var objectTypes = require('./object-types');
+var config = require('./config');
 
 var API_URL = 'https://maps.googleapis.com/maps/api/js';
 var DEFAULT_ZOOM = 9;
@@ -177,13 +178,13 @@ var createMap = function(opts) {
   };
 
   map.loadLines = function() {
-    map.data.loadGeoJson('/api/lines');
+    map.data.loadGeoJson(config.url + '/api/lines');
   };
 
   map.loadFiders = function() {
     var params = api.getParams();
     if(map.zoom >= objectTypes.fider.zoom)
-      map.data.loadGeoJson('/api/lines/fiders?'+params);
+      map.data.loadGeoJson(config.url + '/api/lines/fiders?'+params);
   }
 
   google.maps.event.addListener(map, 'zoom_changed', markerZoomer);

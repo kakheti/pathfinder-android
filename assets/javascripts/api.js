@@ -1,5 +1,6 @@
 var _ = require('lodash');
 var Promise = require('bluebird');
+var config = require('./config');
 
 var API = {};
 
@@ -18,14 +19,14 @@ API.loadObjects = function(type, message) {
   var bounds = window.map.getBounds().toUrlValue();
   var region = $("#search-region").val();
   return new Promise(function(resolve, reject) {
-    $.get('/api/search', {bounds: bounds, region_id: region, type: [type]}).done(function(data) { logger(); resolve(data); }).fail(function(err) { logger(); reject(err); });
+    $.get(config.url + '/api/search', {bounds: bounds, region_id: region, type: [type]}).done(function(data) { logger(); resolve(data); }).fail(function(err) { logger(); reject(err); });
   });
 };
 
 API.loadObjectInfo = function(id, type) {
   logger('იტვირთება...');
   return new Promise(function(resolve, reject) {
-    var tp = _.template('/api/<%=type%>s/<%=id%>');
+    var tp = _.template(config.url + '/api/<%=type%>s/<%=id%>');
     $.get(tp({ type: type, id:id })).done(function(data){ logger(); resolve(data); }).fail(function(err){ logger(); reject(err); });
   });
 };
