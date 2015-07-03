@@ -2,6 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-eval' 'unsafe-inline'">
   <meta name="Author" content="Dimitri Kurashvili <dimakura@gmail.com>">
   <meta name="Keywords" content="KED,Electricity,Maps,GIS">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1">
@@ -17,7 +18,7 @@
 <div class="search">
   <div class="card">
     <form id="search-form">
-      <input type="text" id="search-query" autofocus autocomplete="off">
+      <input type="text" id="search-query" autocomplete="off">
       <button class="waves-effect waves-light btn btn-flat red accent-2 white-text">
         <i class="mdi-action-search"></i>
 

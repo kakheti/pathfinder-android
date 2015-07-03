@@ -54,7 +54,7 @@ var loadAPI = function(opts) {
   return new Promise(function(resolve, reject) {
     var script = document.createElement('script');
     script.type = 'text/javascript';
-    var baseUrl = API_URL + '?v=3.ex&sensor=false&callback=onGoogleMapLoaded&libraries=geometry';
+    var baseUrl = API_URL + '?v=3.ex&callback=onGoogleMapLoaded&libraries=geometry';
 
     if ( opts && opts.apikey ) {
       script.src = baseUrl+'&key=' + opts.apikey;
@@ -116,7 +116,7 @@ var createMap = function(opts) {
       if(map.loadedMarkers[obj.id] == true) return;
 
       var latLng = new google.maps.LatLng(obj.lat, obj.lng);
-      var icon = "/map/"+obj.type +'.png';
+      var icon = "map/"+obj.type +'.png';
       var marker = new google.maps.Marker({ position: latLng, icon: icon, title: obj.name });
       marker.id = obj.id;
       marker.type = obj.type;

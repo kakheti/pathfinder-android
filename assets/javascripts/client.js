@@ -31,6 +31,8 @@ for(type in objectTypes) {
   }));
 }
 
+$.support.cors=true;
+
 logger('იტვირთება...', 6000);
 
 googlemaps.start().then(googlemaps.create).then(function(map) {
