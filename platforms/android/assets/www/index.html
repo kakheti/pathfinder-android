@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="Author" content="Dimitri Kurashvili <dimakura@gmail.com>">
+  <meta name="Keywords" content="KED,Electricity,Maps,GIS">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1">
+  <title>ობიექტების რუკა &mdash; pathfinder</title>
+  <link rel="stylesheet" media="all" href="assets/client.css" />
+</head>
+<body>
+
+<div id="mapwrapper">
+  <div id="mapregion"></div>
+</div>
+
+<div class="search">
+  <div class="card">
+    <form id="search-form">
+      <input type="text" id="search-query" autofocus autocomplete="off">
+      <button class="waves-effect waves-light btn btn-flat red accent-2 white-text">
+        <i class="mdi-action-search"></i>
+
+        <div class="preloader-wrapper active">
+          <div class="spinner-layer spinner-blue-only">
+            <div class="circle-clipper left">
+              <div class="circle"></div>
+            </div><div class="gap-patch">
+              <div class="circle"></div>
+            </div><div class="circle-clipper right">
+              <div class="circle"></div>
+            </div>
+          </div>
+        </div>
+      </button>
+    </form>
+  </div>
+
+  <div class="output" id="search-output">
+    <div class="card-panel small-padding">
+      <div class="summary"></div>
+    </div>
+
+    <div class="card-panel no-padding">
+      <div class="collection"></div>
+    </div>
+  </div>
+</div>
+
+<div class="layers">
+  <div class="card-panel no-padding">
+
+    <div class="regions">
+      <select class="browser-default" id="search-region">
+        <option value="" selected>რაიონი</option>
+        <option value="55228f9f706c617c50000000">საგარეჯო</option>
+        <option value="55228f9f706c617c50060000">სიღნაღი</option>
+        <option value="55228f9f706c617c50080000">დედოფლისწყარო</option>
+        <option value="55228f9f706c617c500a0000">ლაგოდეხი</option>
+        <option value="55228f9f706c617c500d0000">თელავი</option>
+        <option value="55228f9f706c617c500f0000">გურჯაანი</option>
+        <option value="55228f9f706c617c50170000">ახმეტა</option>
+        <option value="55228f9f706c617c50340000">ყვარელი</option>
+        <option value="55228ff9706c617c504b0000">კახეთი</option>
+        <option value="5522a371706c61082d7fe400">თიანეთი</option>
+      </select>
+    </div>
+
+    <div id="search-type" class="small-padding">
+      
+    </div>
+  </div>
+</div>
+
+<script src="assets/jquery.js"></script>
+<script src="assets/materialize.js"></script>
+<script src="assets/client.js"></script>
+
+</body>
+</html>

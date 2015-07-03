@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.phonegap.hello-world"
+        id        = "ge.ked"
         version   = "2.2.0">
-    <name>Hello World</name>
+    <name>კედ</name>
 
     <description>
-        Hello World sample application that responds to the deviceready event.
+        კახეთის ენერგოდისტრიბუცია
     </description>
 
-    <author href="http://phonegap.com" email="support@phonegap.com">
-        PhoneGap Team
+    <author href="http://pirrate.me" email="captain@pirrate.me">
+        Nikoloz Shvelidze
     </author>
 
     <feature name="http://api.phonegap.com/1.0/device" />
