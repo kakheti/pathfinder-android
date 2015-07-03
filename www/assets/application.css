@@ -1,0 +1,547 @@
+/* line 1, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.user-select-none {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+/* line 7, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form,
+.ff-table {
+  margin-bottom: 16px;
+}
+
+/* line 11, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form .ff-action,
+.ff-table .ff-action {
+  margin-left: 4px;
+  font-size: 13px;
+}
+
+/* line 16, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form .ff-action:first-child,
+.ff-table .ff-action:first-child {
+  margin-left: 0;
+}
+
+/* line 20, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form .ff-action img,
+.ff-table .ff-action img {
+  margin-right: 4px;
+  height: 16px;
+  width: 16px;
+}
+
+/* line 26, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form .ff-title,
+.ff-table .ff-title {
+  position: relative;
+}
+
+/* line 30, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form .ff-title .ff-active-title,
+.ff-table .ff-title .ff-active-title {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 4px 8px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* line 42, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form .ff-title .ff-active-title .ff-collapse,
+.ff-table .ff-title .ff-active-title .ff-collapse {
+  display: inline-block;
+  height: 14px;
+  width: 14px;
+  margin-right: 4px;
+  margin-top: 2px;
+}
+
+/* line 50, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form .ff-title .ff-active-title img,
+.ff-table .ff-title .ff-active-title img {
+  height: 16px;
+  width: 16px;
+  overflow: hidden;
+  margin-right: 4px;
+}
+
+/* line 57, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form .ff-title .ff-title-actions,
+.ff-table .ff-title .ff-title-actions {
+  position: absolute;
+  right: 0;
+  top: 4px;
+  padding: 0 8px;
+}
+
+/* line 64, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form .ff-collapse,
+.ff-table .ff-collapse {
+  background: url(/glyphicons-halflings.png) -313px -119px;
+}
+
+/* line 68, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form .ff-collapsed.ff-collapse,
+.ff-table .ff-collapsed.ff-collapse {
+  background: url(/glyphicons-halflings.png) -456px -72px;
+}
+
+/* line 72, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form .ff-field-hint,
+.ff-table .ff-field-hint {
+  background: url(/glyphicons-halflings.png) -456px -72px;
+}
+
+/* line 76, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form .ff-tabs,
+.ff-table .ff-tabs {
+  padding: 4px 0;
+}
+
+/* line 80, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form .ff-tabs ul.ff-tabs-header,
+.ff-table .ff-tabs ul.ff-tabs-header {
+  font-size: 13px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  border-bottom: 1px solid #b1b1b1;
+}
+
+/* line 89, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form .ff-tabs ul.ff-tabs-header li,
+.ff-table .ff-tabs ul.ff-tabs-header li {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 4px 8px;
+  margin-left: 8px;
+  margin-bottom: -1px;
+  border: 1px solid transparent;
+}
+
+/* line 102, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form .ff-tabs ul.ff-tabs-header li img,
+.ff-table .ff-tabs ul.ff-tabs-header li img {
+  margin: 0 4px;
+  height: 16px;
+  width: 16px;
+}
+
+/* line 108, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form .ff-tabs ul.ff-tabs-header li.ff-selected,
+.ff-table .ff-tabs ul.ff-tabs-header li.ff-selected {
+  background: #ffffcc;
+  border: 1px solid #b1b1b1;
+  border-bottom: 1px solid #ffffcc;
+}
+
+/* line 114, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form .ff-tabs .ff-tab-actions,
+.ff-table .ff-tabs .ff-tab-actions {
+  padding: 4px 8px;
+  background: #ffffcc;
+  border: 1px solid #b1b1b1;
+  margin-top: -1px;
+}
+
+/* line 121, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form .ff-tabs .ff-cols,
+.ff-table .ff-tabs .ff-cols {
+  margin: 4px 0 0 0;
+  position: relative;
+  font-size: 13px;
+}
+
+/* line 127, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form .ff-tabs .ff-cols .ff-col-100,
+.ff-table .ff-tabs .ff-cols .ff-col-100 {
+  width: 100%;
+}
+
+/* line 131, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form .ff-tabs .ff-cols .ff-col-50,
+.ff-table .ff-tabs .ff-cols .ff-col-50 {
+  width: 50%;
+  float: left;
+}
+
+/* line 136, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form .ff-tabs .ff-cols .ff-col:first-child .ff-col-inner,
+.ff-table .ff-tabs .ff-cols .ff-col:first-child .ff-col-inner {
+  padding-right: 4px;
+}
+
+/* line 140, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form .ff-tabs .ff-cols .ff-col:last-child .ff-col-inner,
+.ff-table .ff-tabs .ff-cols .ff-col:last-child .ff-col-inner {
+  padding-left: 4px;
+}
+
+/* line 144, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form .ff-tabs .ff-cols .ff-col-inner,
+.ff-table .ff-tabs .ff-cols .ff-col-inner {
+  padding: 0;
+  position: relative;
+}
+
+/* line 149, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form .ff-tabs .ff-cols .ff-col-inner .ff-field,
+.ff-table .ff-tabs .ff-cols .ff-col-inner .ff-field {
+  position: relative;
+  border-bottom: 1px solid #b1b1b1;
+}
+
+/* line 154, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form .ff-tabs .ff-cols .ff-col-inner .ff-field:first-child,
+.ff-table .ff-tabs .ff-cols .ff-col-inner .ff-field:first-child {
+  border-top: 1px solid #b1b1b1;
+}
+
+/* line 158, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form .ff-tabs .ff-cols .ff-col-inner .ff-field .ff-label,
+.ff-table .ff-tabs .ff-cols .ff-col-inner .ff-field .ff-label {
+  display: table-cell;
+  vertical-align: top;
+  position: relative;
+  width: 150px;
+  padding: 4px 4px 4px 8px;
+  background-color: #c8ffb0;
+  border-right: 3px solid transparent;
+}
+
+/* line 168, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form .ff-tabs .ff-cols .ff-col-inner .ff-field .ff-label.ff-required,
+.ff-table .ff-tabs .ff-cols .ff-col-inner .ff-field .ff-label.ff-required {
+  border-right: 3px solid #cf0000;
+}
+
+/* line 172, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form .ff-tabs .ff-cols .ff-col-inner .ff-field .ff-label .ff-field-hint,
+.ff-table .ff-tabs .ff-cols .ff-col-inner .ff-field .ff-label .ff-field-hint {
+  display: block;
+  height: 16px;
+  width: 16px;
+  position: absolute;
+  right: 0;
+  top: 8px;
+  background-position: -96px -96px;
+}
+
+/* line 182, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form .ff-tabs .ff-cols .ff-col-inner .ff-field .ff-value,
+.ff-table .ff-tabs .ff-cols .ff-col-inner .ff-field .ff-value {
+  display: table-cell;
+  padding: 4px;
+  vertical-align: top;
+}
+
+/* line 188, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form .ff-tabs .ff-cols .ff-col-inner .ff-field .ff-value .ff-field-actions,
+.ff-table .ff-tabs .ff-cols .ff-col-inner .ff-field .ff-value .ff-field-actions {
+  display: inline-block;
+  border-left: 1px solid #b1b1b1;
+  padding-left: 8px;
+  margin-left: 8px;
+}
+
+/* line 195, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form .ff-tabs .ff-cols .ff-col-inner .ff-field .ff-value.ff-value-no-label,
+.ff-table .ff-tabs .ff-cols .ff-col-inner .ff-field .ff-value.ff-value-no-label {
+  display: block;
+}
+
+/* line 199, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form .ff-tabs .ff-cols .ff-col-inner .ff-field .ff-select-field,
+.ff-table .ff-tabs .ff-cols .ff-col-inner .ff-field .ff-select-field {
+  display: inline-block;
+}
+
+/* line 203, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form .ff-tabs .ff-cols .ff-col-inner .ff-field .ff-select-field .ff-select-link,
+.ff-table .ff-tabs .ff-cols .ff-col-inner .ff-field .ff-select-field .ff-select-link {
+  margin-left: 4px;
+}
+
+/* line 207, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form .ff-tabs .ff-cols .ff-col-inner .ff-field .ff-select-field .ff-select-label,
+.ff-table .ff-tabs .ff-cols .ff-col-inner .ff-field .ff-select-field .ff-select-label {
+  display: inline-block;
+  padding: 0 4px;
+}
+
+/* line 212, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form .ff-tabs .ff-cols .ff-col-inner .ff-field .ff-array-field,
+.ff-table .ff-tabs .ff-cols .ff-col-inner .ff-field .ff-array-field {
+  display: inline;
+}
+
+/* line 216, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form .ff-tabs .ff-cols .ff-col-inner .ff-field .ff-array-field .ff-array-part,
+.ff-table .ff-tabs .ff-cols .ff-col-inner .ff-field .ff-array-field .ff-array-part {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 0 4px 4px 0;
+  padding: 2px 8px;
+  border: 1px solid #ddd;
+  background: #fafafa;
+}
+
+/* line 229, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form .ff-tabs .ff-cols .ff-col-inner .ff-field .ff-array-field .ff-array-part .ff-action,
+.ff-table .ff-tabs .ff-cols .ff-col-inner .ff-field .ff-array-field .ff-array-part .ff-action {
+  margin-left: 4px;
+}
+
+/* line 233, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form .ff-tabs .ff-cols:after,
+.ff-table .ff-tabs .ff-cols:after {
+  content: ".";
+  display: block;
+  clear: both;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+/* line 242, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form .ff-tabs input,
+.ff-table .ff-tabs input {
+  padding: 4px;
+  margin: 0;
+  font-size: 13px;
+}
+
+/* line 248, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form .ff-tabs select,
+.ff-table .ff-tabs select {
+  padding: 4px;
+  margin: 0;
+  font-size: 13px;
+  width: auto;
+}
+
+/* line 255, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form .ff-tabs .ff-error input,
+.ff-table .ff-tabs .ff-error input {
+  border: 1px solid red;
+  color: red;
+  background: #fff8f8;
+}
+
+/* line 261, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form .ff-tabs .ff-inline-hint,
+.ff-table .ff-tabs .ff-inline-hint {
+  padding: 4px 2px;
+  color: #88f;
+  font-size: 12px;
+}
+
+/* line 267, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form .ff-form-errors,
+.ff-table .ff-form-errors {
+  margin: 8px;
+  padding: 8px;
+  border: 1px solid red;
+  background: #fee;
+  color: red;
+}
+
+/* line 275, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form ul.ff-form-errors li,
+.ff-table ul.ff-form-errors li {
+  margin-left: 16px;
+}
+
+/* line 279, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form .ff-field-errors,
+.ff-table .ff-field-errors {
+  color: red;
+  padding: 4px 0;
+}
+
+/* line 284, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form .ff-bottom-actions,
+.ff-table .ff-bottom-actions {
+  padding: 8px;
+  border-top: 1px solid #b1b1b1;
+  background: #e0e0e0;
+}
+
+/* line 290, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form table.ff-common-table,
+.ff-table table.ff-common-table {
+  margin-top: 8px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* line 296, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form table.ff-common-table thead,
+.ff-table table.ff-common-table thead {
+  text-align: left;
+  border-top: 1px solid #3316ff;
+  border-bottom: 1px solid #3316ff;
+  background: #c8ffb0;
+}
+
+/* line 303, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form table.ff-common-table thead th,
+.ff-table table.ff-common-table thead th {
+  font-size: 13px;
+  font-weight: normal;
+  padding: 4px 8px;
+}
+
+/* line 309, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form table.ff-common-table thead .ff-field-hint,
+.ff-table table.ff-common-table thead .ff-field-hint {
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  background-position: -96px -96px;
+}
+
+/* line 316, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form table.ff-common-table tbody td,
+.ff-table table.ff-common-table tbody td {
+  font-size: 13px;
+  padding: 4px 8px;
+  border-bottom: 1px solid #3316ff;
+  background: white;
+}
+
+/* line 323, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form .ff-paginate .ff-totals,
+.ff-table .ff-paginate .ff-totals {
+  padding: 4px;
+}
+
+/* line 327, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form .ff-paginate .ff-totals span,
+.ff-table .ff-paginate .ff-totals span {
+  padding-left: 4px;
+}
+
+/* line 331, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form .ff-field-before,
+.ff-table .ff-field-before {
+  padding-right: 8px;
+}
+
+/* line 335, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form .ff-field-after,
+.ff-table .ff-field-after {
+  padding-left: 8px;
+}
+
+/* line 339, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form .ff-complex-field .ff-complex-part,
+.ff-table .ff-complex-field .ff-complex-part {
+  display: inline-block;
+  padding-right: 8px;
+}
+
+/* line 344, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form .ff-complex-field .ff-field,
+.ff-table .ff-complex-field .ff-field {
+  display: inline-block;
+  border: none;
+  padding-right: 8px;
+}
+
+/* line 350, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form .ff-select-field,
+.ff-table .ff-select-field {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 3px 3px 2px 3px;
+  background: #ffffcc;
+}
+
+/* line 361, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form .ff-select-field .ff-select-label,
+.ff-table .ff-select-field .ff-select-label {
+  min-width: 100px;
+}
+
+/* line 365, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-empty {
+  color: #a0a0a0;
+}
+
+/* line 368, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-table-empty {
+  padding: 32px;
+  text-align: center;
+  background-color: #f6f6f6;
+  border: 1px solid #a0a0a0;
+  border-top: none;
+}
+
+/* line 375, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-map {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* line 385, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-map img {
+  max-width: none;
+}
+
+/* line 388, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.ff-form .ff-title,
+.ff-table .ff-title {
+  background-color: #cfc8ff;
+  border-bottom: 2px solid #3316ff;
+  border-top: 2px solid #3316ff;
+}
+
+/* line 394, /usr/lib/ruby/gems/2.2.0/gems/forma-0.1.10/vendor/assets/stylesheets/forma.css */
+.tooltip-inner {
+  white-space: pre;
+  max-width: none;
+}
+
+/* line 3, /home/nick/development/pathfinder/app/assets/stylesheets/application.scss */
+#content {
+  margin-top: 64px;
+}
+
+@media print {
+  /* line 8, /home/nick/development/pathfinder/app/assets/stylesheets/application.scss */
+  a[href]:after {
+    content: none !important;
+  }
+
+  /* line 11, /home/nick/development/pathfinder/app/assets/stylesheets/application.scss */
+  #footer, #userbox {
+    display: none;
+  }
+}

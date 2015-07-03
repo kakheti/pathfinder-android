@@ -1,0 +1,14 @@
+@import "forma";
+
+#content {
+  margin-top: 64px;
+}
+
+@media print {
+  a[href]:after {
+    content: none !important;
+  }
+  #footer, #userbox {
+    display: none;
+  }
+}
