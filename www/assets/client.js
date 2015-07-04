@@ -72,8 +72,6 @@ for(type in objectTypes) {
   }));
 }
 
-$.support.cors=true;
-
 logger('იტვირთება...', 6000);
 
 googlemaps.start().then(googlemaps.create).then(function(map) {
@@ -85,8 +83,8 @@ googlemaps.start().then(googlemaps.create).then(function(map) {
 
   google.maps.event.addListener(map, 'tilesloaded', function() {
     loadAll();
-    map.loadLines();
-    map.loadFiders();
+    if(map.showLines !== false) map.loadLines();
+    if(map.showFiders !== false) map.loadFiders();
   });
 
   $("#search-type input").on('change', function(){
@@ -101,16 +99,26 @@ googlemaps.start().then(googlemaps.create).then(function(map) {
 
       map.setLayerVisible(type, enabled);
 
-      /*switch(type) {
+      switch(type) {
         case "line":
-          if(enabled) map.loadLines();
-          else map.clearLines();
+          if(enabled) {
+            map.loadLines();
+            map.showLines = true;
+          } else {
+            map.clearLines();
+            map.showLines = false;
+          }
           break;
         case "fider":
-          if(enabled) map.loadFiders();
-          else map.clearFiders();
+          if(enabled) {
+            map.loadFiders();
+            map.showFiders = true;
+          } else {
+            map.clearFiders();
+            map.showFiders = false;
+          }
           break;
-      }*/
+      }
     }
   });
 
@@ -118,7 +126,7 @@ googlemaps.start().then(googlemaps.create).then(function(map) {
     map.clearAll();
     map.clearFiders();
     loadAll();
-    map.loadFiders();
+    if(map.showFiders !== false) map.loadFiders();
   });
 });
 
